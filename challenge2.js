@@ -4,5 +4,10 @@ function detectSpeed(speed){
     const demeritPointCutoff = 12;
     const pointPerExcessSpeed = 5;
     //check if speed is below or equal to the speed limit
-    if (speed <= speedLimit)
+    if (speed <= speedLimit){
+        console.log("Ok");
+    } else {
+          //calculate excess speed
+          const excessSpeed= speed - speedLimit;
+    }
 }
