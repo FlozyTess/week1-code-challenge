@@ -82,3 +82,5 @@ let paye = 0;
         netSalary,
     };
 }
+//Test call
+calculateNetSalary(90000, 5000, 2024); //(basicSalary:50,000,benefits:10,000,year:2024)
