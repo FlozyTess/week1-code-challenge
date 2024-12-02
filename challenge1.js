@@ -9,11 +9,14 @@
  for(let n = 0;n < 3; n++){
     let marks = prompt("input marks between(0 and 100):");
     //prompt to input marks
- }
+ 
      marks=Number(marks);//converts input from string to number
 
-     //validate the input
-     if(is NaN(marks) || marks < 0 || > 100){
-        console.log ("Invalid input.Please enter a number between 0 and 100.");
-        n--;//decrement the counter to allow the user to input marks again. 
+     
+     if(isNaN(marks) || marks < 0 || marks > 100){
+        console.log ("Invalid input.Please enter a number between 0 and 100.");//validate the input
+        n--;//decrement the counter to allow the user to input marks again
+        continue;//skip the rest of the loop and prompt again 
      } 
+       console.log(`Grade: ${calculateGrade(marks)}`);
+    }
