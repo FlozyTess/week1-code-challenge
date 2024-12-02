@@ -7,7 +7,7 @@
     else return "E"; // grading system based on marks
  }
  
- const inputs = [-5, 67, 42,90,101,20]; // Replace with desired marks
+ const inputs = [-5, 66, 42,90,101,20]; // Replace with desired marks
  for (let n = 0; n < inputs.length; n++) {
     const marks = inputs[n];
      
@@ -16,7 +16,6 @@
         continue; //skip to the next iteration if invalid 
      } 
        console.log(`Grade: ${calculateGrade(marks)}`); // if valid,calculate and log the grade
-      
- }
+}
 
  
