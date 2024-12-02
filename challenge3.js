@@ -14,5 +14,9 @@ function calculateNetSalary(basicSalary, benefits) {
     } else {
         paye = grossSalary * 0.35; // 35% for salaries above 800,000
     }
-// SHIF Deductions
+}
+    // NHIF Deductions
+let nhif;
+    if (grossSalary <= 5999) {
+        nhif = 150;
 }
