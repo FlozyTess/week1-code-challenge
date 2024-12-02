@@ -8,3 +8,7 @@ This program writes a function that prompts the user to input student marks. The
         C = 50-59
         D = 40-49
         E = less than 40
+
+## Challenge 2: Speed Detector
+
+This program detects the speed of a car and gives an output or points depending with if its within the speed limit or exceeds the speed limit.
