@@ -19,3 +19,5 @@
      } 
        console.log(`Grade: ${calculateGrade(marks)}`); // if valid,calculate and log the grade
  }
+ //Test call
+ 
