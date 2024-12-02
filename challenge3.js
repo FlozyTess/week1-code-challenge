@@ -68,4 +68,10 @@ let paye = 0;
 
     // Net Salary Calculation
     const netSalary = grossSalary - (paye + nhif + nssf);
+    // Output the calculations
+    console.log(`Gross Salary: KSh ${grossSalary}`);
+    console.log(`PAYE (Tax): KSh ${paye}`);
+    console.log(`NHIF Deductions: KSh ${nhif}`);
+    console.log(`NSSF Deductions: KSh ${nssf}`);
+    console.log(`Net Salary: KSh ${netSalary}`);
 
