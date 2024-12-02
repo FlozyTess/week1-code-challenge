@@ -10,4 +10,5 @@
     let marks = prompt("input marks between(0 and 100):");
     //prompt to input marks
  }
- 
+     marks=Number(marks);//converts input from string to number
+     
