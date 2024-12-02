@@ -66,4 +66,6 @@ let paye = 0;
         nssf += maxContribution * EmployerContributionRate; // Employer contribution
     }
 
-    
+    // Net Salary Calculation
+    const netSalary = grossSalary - (paye + nhif + nssf);
+
