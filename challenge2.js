@@ -22,6 +22,6 @@ function detectSpeed(speed){
     
 }
 // Test call
-detectSpeed(100);
-detectSpeed(180);
+detectSpeed(120);
+detectSpeed(20);
 detectSpeed(70);
