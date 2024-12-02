@@ -9,5 +9,9 @@ function detectSpeed(speed){
     } else {
           //calculate excess speed
           const excessSpeed= speed - speedLimit;
+          //calculate the demerit points(1point for every 5km/s above speed limit)
+          const demeritpoints= math.floor (excessspeed / pointPerExcessSpeed);
+
+          //chec
     }
 }
