@@ -11,4 +11,9 @@
     //prompt to input marks
  }
      marks=Number(marks);//converts input from string to number
-     
+
+     //validate the input
+     if(is NaN(marks) || marks < 0 || > 100){
+        console.log ("Invalid input.Please enter a number between 0 and 100.");
+        n--;//decrement the counter to allow the user to input marks again. 
+     } 
