@@ -51,3 +51,19 @@ let paye = 0;
     } else {
         nhif = 1700; // Maximum NHIF deduction
     }
+    // NSSF Deductions
+    let nssf = 0;
+    const EmployeeContributionRate = 0.06; // 6% of pensionable pay
+    const EmployerContributionRate = 0.06; // 6% of pensionable pay
+    const maxContribution = year >= 2024 ? 7000 : 6000; // maximum contribution
+
+    // Contributions (Employee & Employer)
+    if (grossSalary <= maxContribution) {
+        nssf += grossSalary * EmployeeContributionRate; // Employee contribution
+        nssf += grossSalary * EmployerContributionRate; // Employer contribution
+    } else {
+        nssf += maxContribution * EmployeeContributionRate; // Employee contribution
+        nssf += maxContribution * EmployerContributionRate; // Employer contribution
+    }
+
+    
