@@ -12,3 +12,6 @@ This program writes a function that prompts the user to input student marks. The
 ## Challenge 2: Speed Detector
 
 This program detects the speed of a car and gives an output or points depending with if its within the speed limit or exceeds the speed limit.
+## Challenge 3: Net Salary Calculator 
+
+ This programs major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. It calculates the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. 
