@@ -12,6 +12,10 @@ function detectSpeed(speed){
           //calculate the demerit points(1point for every 5km/s above speed limit)
           const demeritpoints= math.floor (excessspeed / pointPerExcessSpeed);
 
-          //chec
+          //check if the demerit points exceed cutoff
+          if (demeritpoints >= demeritPointCutoff){
+            console.log("License suspended");
+            else
+          }
     }
 }
