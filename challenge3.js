@@ -1,5 +1,5 @@
 //Net Salary Calculator
-function calculateNetSalary(basicSalary, benefits) {
+function calculateNetSalary(basicSalary, benefits,year) {
     const grossSalary = basicSalary + benefits; // Calculate Gross Salary
 // PAYE Calculation
 let paye = 0;
@@ -55,7 +55,7 @@ let paye = 0;
     let nssf = 0;
     const EmployeeContributionRate = 0.06; // 6% of pensionable pay
     const EmployerContributionRate = 0.06; // 6% of pensionable pay
-    const maxContribution = year >= 2024 ? 7000 : 6000; // maximum contribution
+    const maxContribution = year >= 2024 ? 7000 : 6000; // maximum contribution based on year
 
     // Contributions (Employee & Employer)
     if (grossSalary <= maxContribution) {
@@ -74,4 +74,11 @@ let paye = 0;
     console.log(`NHIF Deductions: KSh ${nhif}`);
     console.log(`NSSF Deductions: KSh ${nssf}`);
     console.log(`Net Salary: KSh ${netSalary}`);
-
+    return {
+        grossSalary,
+        paye,
+        nhif,
+        nssf,
+        netSalary,
+    };
+}
